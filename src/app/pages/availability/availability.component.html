@@ -5,7 +5,6 @@
      <div class="col-6 col-md-4">
        <form>
          <div class="form-group">
-           <input type="password" pPassword />
            <mat-form-field>
              <mat-label>Type tour</mat-label>
              <mat-select [(value)]="selected">
@@ -57,8 +56,8 @@
       <mat-tab label="Ago" disabled> Content 3 </mat-tab>
       <mat-tab label="Sep" disabled > Content 3 </mat-tab>
       <mat-tab label="Oct" aria-selected="true"><app-month></app-month></mat-tab>
-      <mat-tab label="Nov"> Content 3 </mat-tab>
-      <mat-tab label="Dic"> Content 3 </mat-tab>
+      <mat-tab label="Nov"> <app-month></app-month> </mat-tab>
+      <mat-tab label="Dic"> <app-month></app-month> </mat-tab>
     </mat-tab-group>
   </div>
 </div>

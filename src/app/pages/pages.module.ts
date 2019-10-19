@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import {MaterialAModule} from '../material-a.module';
 import { MonthComponent } from './availability/month/month.component';
 import {PrimengModule} from '../primeng.module';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import {PrimengModule} from '../primeng.module';
     FormsModule,
     BrowserModule,
     MaterialAModule,
-    PrimengModule
+    PrimengModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ]
 
 })

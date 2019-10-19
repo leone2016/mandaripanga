@@ -1,56 +1,57 @@
 <div class="jumbotron">
-  <table class="table" style="margin-bottom: 0;">
-    <thead class="thead-dark">
-    <tr>
-      <th scope="col">Itinerary</th>
-      <th scope="col">Avail Block Confirm</th>
-      <th scope="col"></th>
-    </tr>
-    </thead>
-  </table>
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            1 - 5 [4D]
-          </mat-panel-title>
-          <mat-panel-description>
-            <h3>
-              <span class="badge badge-success" style="margin-right: 0.5rem;">5</span>
-              <span class="badge badge-danger" style="margin-right: 0.5rem;">6</span>
-              <span class="badge badge-warning" style="margin-right: 0.5rem;">9</span>
-            </h3>
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+  <div class="content-section implementation">
+    <p-table [columns]="cols" [value]="cars" dataKey="code">
+      <ng-template pTemplate="header" let-columns class="thead-dark">
+        <tr >
+          <th *ngFor="let col of columns; let i = index"  style="width: 3em"  >
+            {{col.header}}
+          </th>
+          <th style="width: 3em"></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+        <tr>
 
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
+          <td *ngFor="let col of columns">
+            {{rowData[col.field]}}
+          </td>
+          <td>
+            <a href="#" [pRowToggler]="rowData" style="font-size: 0.5rem">
+              <!--              <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>-->
+              {{expanded ? 'HIDEN' : 'SHOW'}}
+            </a>
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns">
+        <tr>
+          <td [attr.colspan]="columns.length + 1">
+            <div class="ui-g ui-fluid" style="font-size:16px;padding:20px" [@rowExpansionTrigger]="'active'">
+              <div class="ui-g-12 ui-md-3" style="text-align:center">
+                IMG
+              </div>
+              <div class="ui-g-12 ui-md-9">
+                <div class="ui-g">
+                  <div class="ui-g-12" style="alignment: center">
+                    <b>Vin:</b> {{rowData.itinerario}}
+                  </div>
+                  <div class="ui-g-12" style="alignment: center">
+                    <b>Year:</b> {{rowData.available}}
+                  </div>
+                  <div class="ui-g-12" style="alignment: center">
+                    <b>Brand:</b> {{rowData.hold}}
+                  </div>
+                  <div class="ui-g-12" style="alignment: center">
+                    <b>Color:</b> {{rowData.conf}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
 
-        <mat-form-field>
-          <input matInput placeholder="Age">
-        </mat-form-field>
-      </mat-expansion-panel>
-      <mat-divider></mat-divider>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Personal data
-          </mat-panel-title>
-          <mat-panel-description>
-            Type your name and age
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
-
-        <mat-form-field>
-          <input matInput placeholder="Age">
-        </mat-form-field>
-      </mat-expansion-panel>
-
-    </mat-accordion>
+  </div>
 
 </div>
