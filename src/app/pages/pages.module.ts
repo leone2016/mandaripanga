@@ -13,6 +13,7 @@ import { MonthComponent } from './availability/month/month.component';
 import {PrimengModule} from '../primeng.module';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { OptionsComponent } from './availability/options/options.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ReservesComponent,
     AboutComponent,
     MonthComponent,
+    OptionsComponent,
 
   ],
   exports:[
@@ -37,7 +39,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     PrimengModule,
     HttpClientModule,
     BrowserAnimationsModule
+  ],
+  entryComponents:[    OptionsComponent
   ]
-
 })
 export class PagesModule{}

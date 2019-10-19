@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import {MatButtonModule, MatIconModule, MatToolbarModule,
   MatDividerModule, MatListModule, MatCardModule,
   MatInputModule, MatSelectModule, MatTabsModule,
-  MatExpansionModule} from '@angular/material';
+  MatExpansionModule, MatBottomSheetModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,9 @@ import {MatButtonModule, MatIconModule, MatToolbarModule,
     MatInputModule,
     MatSelectModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatBottomSheetModule,
+    MatCheckboxModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +34,9 @@ import {MatButtonModule, MatIconModule, MatToolbarModule,
     MatInputModule,
     MatSelectModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatBottomSheetModule,
+    MatCheckboxModule
   ],
   providers: [],
 })
