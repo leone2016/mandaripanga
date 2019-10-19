@@ -1,0 +1,31 @@
+{
+  "data": [
+    {"space_number": "1A", "capacity": 2, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 1
+    },
+    {"space_number": "2", "capacity": 3, "rate_person": "US$ 550", "promotion": "$100 OFF","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 2
+    },
+    {"space_number": "3", "capacity": 2, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 3
+    },
+    {"space_number": "4", "capacity": 2, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 4
+    },
+    {"space_number": "5", "capacity": 2, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 5
+    },
+    {"space_number": "6", "capacity": 2, "rate_person": "US$ 550", "promotion": "$100 OFF","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 6
+    },
+    {"space_number": "7", "capacity": 1, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 7
+    },
+    {"space_number": "8", "capacity": 4, "rate_person": "US$ 550", "promotion": "NO PROMO","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 8
+    },
+    {"space_number": "9", "capacity": 5, "rate_person": "US$ 550", "promotion": "$50 OFF","status": "Available","color": "#73ec7f","rack": "US$ 500",
+      "code": 9
+    }
+  ]
+}
